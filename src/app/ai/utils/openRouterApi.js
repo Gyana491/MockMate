@@ -13,10 +13,13 @@ export async function makeAPIRequest(prompt, retryCount = 3, timeout = 30000) {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), timeout);
 
+      // Replace the hardcoded API key with the one from the environment variable
+      const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+
       const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
         headers: {
-          Authorization:`Bearer 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`,
+          Authorization: `Bearer ${OPENROUTER_API_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
