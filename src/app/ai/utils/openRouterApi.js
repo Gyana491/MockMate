@@ -23,7 +23,7 @@ export async function makeAPIRequest(prompt, retryCount = 3, timeout = 30000) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'google/gemini-2.0-flash-thinking-exp:free',
+          model: 'meta-llama/llama-4-maverick:free',
           messages: [
             { 
               role: 'user', 
