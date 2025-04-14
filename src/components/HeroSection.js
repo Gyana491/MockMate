@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -30,14 +31,15 @@ export default function HeroSection() {
                   variant="default"
                   className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-medium rounded-xl px-8 py-4 w-full md:w-auto animate-pulse-slow"
                 >
-                  Start Interview
+                  <Link href="/mock-test">Take a Mock Test</Link>
                 </Button>
 
                 <Button
                   variant="outline"
                   className="bg-neutral-800 hover:bg-neutral-700 text-black font-medium rounded-xl px-8 py-4 w-full md:w-auto"
                 >
-                  Practice Problems
+                  <a href="https://jinny.onrender.com/" target="_blank">Try Jinny AI</a>
+                  
                 </Button>
               </div>
 
