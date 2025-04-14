@@ -44,7 +44,7 @@ const Card = () => {
                 DESIGN, CODE AND WRITE
               </p>
               <p className="text-gray-300 text-sm mb-6">
-                Being 10+ in the world of design and code, I'm excited to share
+                Being 10+ in the world of design and code, I&apos;m excited to share
                 my knowledge through comprehensive courses.
               </p>
 
@@ -102,7 +102,7 @@ const Card = () => {
                 DESIGN, CODE AND WRITE
               </p>
               <p className="text-gray-300 text-sm mb-6">
-                Being 10+ in the world of design and code, I'm excited to share
+                Being 10+ in the world of design and code, I&apos;m excited to share
                 my knowledge through comprehensive courses.
               </p>
 
@@ -160,7 +160,7 @@ const Card = () => {
                 DESIGN, CODE AND WRITE
               </p>
               <p className="text-gray-300 text-sm mb-6">
-                Being 10+ in the world of design and code, I'm excited to share
+                Being 10+ in the world of design and code, I&apos;m excited to share
                 my knowledge through comprehensive courses.
               </p>
 

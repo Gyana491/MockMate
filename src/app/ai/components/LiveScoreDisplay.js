@@ -126,7 +126,7 @@ const LiveScoreDisplay = ({ analysis, liveAnalysis, isLiveScoreEnabled }) => {
           <div className="mb-4">
             <h4 className="text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Assessment</h4>
             <p className="text-gray-700 italic border-l-4 pl-3 py-1 border-gray-300">
-              "{displayAnalysis.assessment}"
+              &quot;{displayAnalysis.assessment}&quot;
             </p>
           </div>
         )}

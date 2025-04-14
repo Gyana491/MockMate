@@ -51,7 +51,6 @@ const InterviewSession = ({ questions, onComplete, settings }) => {
   const currentQuestion = questions[currentQuestionIndex];  // Get available voices on component mount
   useEffect(() => {
     if (!isSpeechSynthesisSupported) return;
-
     const loadVoices = () => {
       try {
         const voices = window.speechSynthesis.getVoices();
@@ -64,13 +63,10 @@ const InterviewSession = ({ questions, onComplete, settings }) => {
         setVoiceError('Failed to load voices. Please refresh the page or try a different browser.');
       }
     };
-    
     // Initial load
     loadVoices();
-    
     // Chrome requires this event for voices to be loaded
     window.speechSynthesis.onvoiceschanged = loadVoices;
-    
     return () => {
       window.speechSynthesis.onvoiceschanged = null;
     };
@@ -139,7 +135,7 @@ const InterviewSession = ({ questions, onComplete, settings }) => {
     setLiveAnalysis(null);
     lastAnalysisLengthRef.current = 0;
     
-  }, [currentQuestionIndex, currentQuestion, voiceEnabled, selectedVoice, voiceRate]);
+  }, [currentQuestionIndex, currentQuestion, voiceEnabled, selectedVoice, voiceRate, isSpeechSynthesisSupported, getVoices, speak]);
 
   // Log when current question changes
   useEffect(() => {
@@ -178,7 +174,7 @@ const InterviewSession = ({ questions, onComplete, settings }) => {
       handleSubmitAnswer();
     }
     return () => clearTimeout(timer);
-  }, [countdown, voiceEnabled]);
+  }, [countdown, voiceEnabled, isSpeechSynthesisSupported, speak, voiceRate, handleSubmitAnswer]);
 
   // Function to analyze partial answers in real-time
   const analyzePartialResponse = useCallback(async (text) => {

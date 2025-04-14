@@ -84,7 +84,7 @@ const FeedbackSummary = ({ interviewResults, feedback, settings }) => {
         pitch: 1
       });
     }
-  }, [interviewResults, feedback, voiceEnabled, isSpeechSynthesisSupported, selectedVoice]);
+  }, [interviewResults, feedback, voiceEnabled, isSpeechSynthesisSupported, selectedVoice, getVoices, speak]);
   
   // Calculate overall score
   const overallScore = interviewResults.reduce((sum, result) => {
@@ -158,7 +158,7 @@ const FeedbackSummary = ({ interviewResults, feedback, settings }) => {
         score: question.analysis.overallScore || question.analysis.score
       });
     }
-  }, [expandedQuestion, interviewResults]);
+  }, [expandedQuestion, interviewResults, getVoices, speak]);
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">

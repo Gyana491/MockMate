@@ -70,7 +70,7 @@ const InterviewSetup = ({ onStartInterview }) => {
         cancel();
       }
     };
-  }, []);
+  }, [isSpeechSynthesisSupported, getVoices, speak, cancel, voiceEnabled, voiceRate]);
 
   useEffect(() => {
     if (skill) {

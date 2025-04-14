@@ -114,14 +114,12 @@ export default function HeroSection() {
                   <div className="space-y-3">
                     <div className="p-4 bg-neutral-700/20 rounded-lg animate-fade-in delay-100">
                       <p className="text-white">
-                        Let's implement a function to reverse a linked list. Can
-                        you walk me through your approach?
+                        Let&apos;s implement a function to reverse a linked list. Can you walk me through your approach?
                       </p>
                     </div>
                     <div className="p-4 bg-indigo-500/10 rounded-lg ml-8 animate-fade-in delay-200">
                       <p className="text-gray-300">
-                        I'll use an iterative approach with three pointers to
-                        track the previous, current, and next nodes...
+                        I&apos;ll use an iterative approach with three pointers to track the previous, current, and next nodes...
                       </p>
                     </div>
                   </div>
@@ -140,14 +138,12 @@ export default function HeroSection() {
                     </div>
                     <div className="font-mono text-sm text-gray-300 space-y-1">
                       <div className="text-pink-400">function</div>
-                      <div className="text-indigo-400 ml-4">
-                        reverseLinkedList(head) {`{`}
-                      </div>
+                      <div className={`text-indigo-400 ml-4`}>{`{`}</div>
                       <div className="text-gray-300 ml-8">let prev = null;</div>
                       <div className="text-gray-300 ml-8">
                         let current = head;
                       </div>
-                      <div className="text-indigo-400 ml-4">{`}`}</div>
+                      <div className={`text-indigo-400 ml-4`}>{`}`}</div>
                     </div>
                   </div>
                 </div>
