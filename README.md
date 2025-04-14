@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎙️ AI-Powered Mock Interview Voice Assistant
 
-## Getting Started
+## 🔹 Problem Statement
 
-First, run the development server:
+Students often struggle with:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Spoken English fluency  
+- Interview confidence  
+- Effective communication  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Traditional mock interviews are:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Costly  
+- Stress-inducing  
+- Not easily accessible  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Additional challenges include:
 
-## Learn More
+- Students from non-English backgrounds face more barriers  
+- Lack of practice leads to missed real interview opportunities  
 
-To learn more about Next.js, take a look at the following resources:
+### 🚨 The Need:
+A fun, engaging, and personalized solution to help students practice speaking and prepare for interviews is essential.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✅ Solution
 
-## Deploy on Vercel
+Introducing an **AI-powered mock interview voice assistant** designed to make interview preparation smarter and more accessible.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Key Features:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 🎙️ **Voice-based interaction** – Simulates real interviews
+- 🧠 **Adaptive questioning** – Based on user profile & job descriptions
+- 📊 **Real-time feedback** – On tone, pace, and clarity
+- 🌐 **Multilingual support** – User-friendly interface for all
+- 💬 **Modes** – Practice, Challenge, Interview Replay
+- 🎯 **Goal** – Build confidence, improve fluency, and make learning fun
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Tools Used                                     |
+|--------------|------------------------------------------------|
+| Speech-to-Text | Chrome Browser Speech API                    |
+| NLP Engine     | OpenRouter Llama for dynamic interview responses |
+| Text-to-Speech | Browser Speech API                           |
+| Frontend       | React.js / Next.js, TailwindCSS              |
+| Backend        | Node.js / Express.js                         |
+| Database       | MongoDB                                      |
+| Hosting        | Render / Vercel / Firebase / AppWrite        |
+
+---
+
+## 🌍 Real-World Impact / Use Cases
+
+- 🎓 **Placement Preparation** – Practice campus interviews anytime, anywhere  
+- 🗣️ **Spoken English Coaching** – Improve fluency with interactive conversations  
+- 🚀 **Confidence Building** – Reduces fear of public speaking & interviews  
+- 📚 **Soft Skills Training** – Great resource for college communication courses  
+- 🧑‍🎓 **Accessible Learning** – Especially helpful for Tier-2/3 college students  
+- 🌍 **Global Use Case** – Scalable for language learners and job seekers worldwide
+
+---
+
+## 💡 Why It’s Unique & Helpful
+
+- 🧑‍💼 **Talks Like a Human** – Realistic voice interactions, not boring text-based bots  
+- 🎮 **Feels Like a Game** – Levels, challenges, and instant feedback make it fun  
+- 🧠 **Adapts to You** – Smart questioning based on your answers and skills  
+- ⚡ **Instant Feedback** – Real-time tips on tone, speed, and clarity  
+- 🌐 **Inclusive & Accessible** – Works for all backgrounds and local languages  
+- ⏱️ **Practice Anytime** – No mentor bookings or time limits required  
+
+---
+
+## 🚀 Who Can Benefit?
+
+- 👨‍🎓 Students preparing for interviews  
+- 🗣️ Language learners improving spoken English  
+- 🧑‍🏫 Colleges looking to enhance soft skill programs  
+- 💼 Job seekers building communication
